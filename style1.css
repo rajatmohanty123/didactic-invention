@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: radial-gradient(#80adc3,#495e);
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+}
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+.container{
+  background-color: rgb(0, 100, 0);
+  text-align: center;
+}
+.container ul{
+  display: inline-flex;
+  list-style-type: none;
+  color: #fff;
+
+      }
+.container ul li{
+  width: 120px;
+  margin: 15px;
+  padding: 15px;
+      }
+.container ul li a{
+  text-decoration: none;
+  color: #fff;
+  float: left;
+  display: block;
+  text-decoration: none;
+  font-size: 17px;
+}
+.active,.container ul li:hover{
+        background: #2bab0d;
+        border-radius: 3px;
+      }
+.sub-container1{
+        display: none;
+      }
+.container ul li:hover .sub-container1{
+        display:block;
+        position: absolute;
+        background-color: rgb(0, 100, 0);
+        margin-top: 15px;
+        margin-left: -15px;
+        border-radius: 0px;
+      }
+.container ul li:hover .sub-container1 ul{
+  display: block;
+  margin: 10px;
+}
+.container ul li:hover .sub-container1 ul li{
+  width: 130px;
+  padding: 15px;
+  background: transparent;
+  border-radius: 0px;
+  text-align: left;
+}
+.container ul li:hover .sub-container1 ul li a:hover{
+  background: #b2ff00;
+}
+.sub-container2{
+  display: none;
+}
+.hover-me:hover .sub-container2{
+  position: absolute;
+  display: block;
+  margin-top: -40px;
+  margin-left: 140px;
+  background-color: rgb(0, 100, 0);
+  border-radius: 0px;
+}
